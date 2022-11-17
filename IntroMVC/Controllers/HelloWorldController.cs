@@ -30,5 +30,16 @@ namespace IntroMVC.Controllers
             { Name = "Cheems", Age = 5 };
             return View(newcat);
         }
+        public IActionResult HotelBooking()
+        {
+            HotelBookingModel newbooking = new HotelBookingModel()
+            {
+                GuestName = "Astro Man",
+                Id = 11233,
+                DateStart = DateTime.Parse("2022/04/08"),
+                DateEnd = DateTime.Parse("2022/04/14")
+            };
+            return View(newbooking);
+        }
     }
 }
